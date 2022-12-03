@@ -107,4 +107,17 @@ public class User {
     public void setRolesCollection(Collection<Role> roleCollection) {
         this.roleCollection = roleCollection;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", roleCollection=" + roleCollection +
+                '}';
+    }
 }
