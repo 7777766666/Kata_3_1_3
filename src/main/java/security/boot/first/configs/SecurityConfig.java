@@ -45,6 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .successHandler("куда направить ссылку, не урл") //внутрь добавить настройку, куда перенаправитть в случае успешной аудентификации
                 .and()
                 .logout().logoutSuccessUrl("/");    //куда перенаправлять после лог аута (корневая страница)
+        //http.csrf().disable(); - если надо отключить csrf секьюрити
 
     }
 
